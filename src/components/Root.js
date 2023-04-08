@@ -8,12 +8,14 @@ const Root = () => {
   const [languageData, setLanguageData] = useState([]);
   const [imageData, setImageData] = useState([]);
   const handleLanguageClick = (item) => {
+    setImageData([]);
     const filteredData = allData.languageTableData.filter(
       (x) => x.type === item.type
     );
     setLanguageData(filteredData);
   };
   const handleImageClick = (item) => {
+    setLanguageData([]);
     const filteredData = allData.imageTableData.filter(
       (x) => x.type === item.type
     );

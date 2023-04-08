@@ -10,7 +10,7 @@ const DropDown = ({ text, data, handleClick }) => {
   return (
     <div>
       <UncontrolledDropdown>
-        <DropdownToggle caret color="dark">
+        <DropdownToggle caret color="primary">
           {text}
         </DropdownToggle>
         <DropdownMenu dark>
